@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sagarism - Where Sagar Hani Speaks</title>
+    <description></description>
+    <link>http://sagarhani.in/</link>
+    <atom:link href="http://sagarhani.in/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 03 Aug 2015 22:57:41 +0530</pubDate>
+    <lastBuildDate>Mon, 03 Aug 2015 22:57:41 +0530</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Mid-night git session at dgplug</title>
+        <description>&lt;p&gt;I’m using git since few months. The world of git is too big. You have lot of things to explore in that.&lt;/p&gt;
+
+&lt;p&gt;One way to explore things in any technology or programming language is by solving the problems.&lt;/p&gt;
+
+&lt;p&gt;On &lt;a href=&quot;http://dgplug.org&quot;&gt;#dgplug&lt;/a&gt; (Durgapur Linux Users’ Group) channel, someone had a problem with git.&lt;/p&gt;
+
+&lt;p&gt;The problem statement goes like this :&lt;/p&gt;
+
+&lt;p&gt;A person has made 4 commits and sent a pull request. Now, the owner of the GitHub repository is asking that person to remove the last 2 commits i.e commit number – 3 and commit number – 4. How can one remove the last 2 commits keeping first 2 commits as it is ?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;sayanchowdhury.dgplug.org&quot;&gt;Sayan&lt;/a&gt; was there to help in this problem. He took a hands-on session at that late night (It was around 11.45 p.m IST).&lt;/p&gt;
+
+&lt;p&gt;If you want to learn to solve this problem, just follow these instructions :&lt;/p&gt;
+
+&lt;p&gt;First we cloned this repository :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git clone https://github.com/kushaldas/pym/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;As usual, you need to change your current directory to project directory, so hit :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ cd pym&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you are inside the project directory. We moved into code directory of the project. To do this, hit :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ cd code&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We added a new file called helloworld.py&lt;/p&gt;
+
+&lt;p&gt;After this, check the status of the git by executing :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git status&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You will be able to see &lt;code&gt;helloworld.py&lt;/code&gt; file name in red color under Untracked files. This tells that the file has not been tracked by the git.
+Please remember this point as this is important.&lt;/p&gt;
+
+&lt;p&gt;Next do :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git diff&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will not show any changes as of now.&lt;/p&gt;
+
+&lt;p&gt;Now add this statement in argvtest.py  file :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;print 'hello world'&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note : argvtest.py file is already present in the code directory&lt;/p&gt;
+
+&lt;p&gt;Now again, check the status of the git by executing :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git status&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Can you see the changes now ?&lt;/p&gt;
+
+&lt;p&gt;We can see argvtest.py file in red color under modified files and hellowold.py file in red color under Untracked files.&lt;/p&gt;
+
+&lt;p&gt;Now do :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git diff&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can see the changes you have made. If you have added a new line you will be able see it in green color preceding with &lt;code&gt;+&lt;/code&gt; (plus) symbol. If you have deleted a line you will be able see it in red color preceding with &lt;code&gt;–&lt;/code&gt; (minus) symbol.&lt;/p&gt;
+
+&lt;p&gt;I hope you have completely understood till here. :)&lt;/p&gt;
+
+&lt;p&gt;Now do :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git add argvtest.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The argvtest.py file is now staged. To check this, do :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git status&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can see the color of the modified file i.e argvtest.py has been changed from red to green. This represent that the file has been staged and tracked by git.&lt;/p&gt;
+
+&lt;p&gt;Now do :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git diff&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You don’t see nothing, because by default git diff shows whatever is there in modified.&lt;/p&gt;
+
+&lt;p&gt;Since we have nothing in modified area, it doesn’t show anything.&lt;/p&gt;
+
+&lt;p&gt;argvtest.py file is now staged and if you want to see the changes, do :&lt;/p&gt;
+
+&lt;p&gt;$&lt;code&gt;git diff --staged&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will show the changes in the staged area.&lt;/p&gt;
+
+&lt;p&gt;Note : &lt;code&gt;$ git diff --staged&lt;/code&gt; and &lt;code&gt;$ git diff --cached&lt;/code&gt; does same thing.&lt;/p&gt;
+
+&lt;p&gt;Now let’s commit this by doing :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git commit&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will open a text editor and you will see the text in there “Changes to be committed”.&lt;/p&gt;
+
+&lt;p&gt;Now write the commit message in the first line, then save and quit. (Lines starting with # will be ignored)&lt;/p&gt;
+
+&lt;p&gt;To see your commit, do :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git log&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To see the changes made in the commit, do :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git log -p&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There will be lot of commits, now do :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git reset --soft HEAD~1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git status&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;See the output. Understood what &lt;code&gt;$ git reset --soft HEAD~1&lt;/code&gt; did ?&lt;/p&gt;
+
+&lt;p&gt;Soft reset brings the changes to staged.&lt;/p&gt;
+
+&lt;p&gt;Now,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ git reset HEAD argvtest.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;will bring into unstaged area as you can see in the output, it shows the file name under Unstaged changes.&lt;/p&gt;
+
+&lt;p&gt;HEAD is referred as the topmost commit in git just like tip is referred as the topmost commit in mercurial.&lt;/p&gt;
+
+&lt;p&gt;HEAD~1 takes 1 commit behind.
+HEAD~2 takes 2 commit behind and so on…&lt;/p&gt;
+
+&lt;p&gt;Important note : If we do &lt;code&gt;$ git reset --soft HEAD&lt;/code&gt; then we won’t loose the changes made in other commits which were removed.&lt;/p&gt;
+
+&lt;p&gt;I hope after reading this post you would have understood how to solve the above mentioned problem. :)&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 04 Aug 2015 01:38:56 +0530</pubDate>
+        <link>http://sagarhani.in/jekyll/update/2015/08/04/midnight-git-session-at-dgplug.html</link>
+        <guid isPermaLink="true">http://sagarhani.in/jekyll/update/2015/08/04/midnight-git-session-at-dgplug.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 03 Aug 2015 01:38:56 +0530</pubDate>
+        <link>http://sagarhani.in/jekyll/update/2015/08/03/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://sagarhani.in/jekyll/update/2015/08/03/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
