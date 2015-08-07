@@ -2,7 +2,7 @@
 layout: post
 title:  Mid-night git session at dgplug
 summary: Learning git by solving a prog
-permalink: as per akshay's suggestion :P
+permalink: as-per-akshay's-suggestion-:P
 ---
 
 
