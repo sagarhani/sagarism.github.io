@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mid-night git session at dgplug"
-permalink: As per Akshay's suggestion :P
+permalink: as-per-Akshays-suggestion-:P
 
 ---
 
