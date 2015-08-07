@@ -1,0 +1,12 @@
+# Site settings
+title: Sagarism - Where Sagar Hani Speaks
+email: sagarhani33@gmail.com
+website: http://sagarhani.in
+description: 
+baseurl: "" 
+url: "http://sagarhani.in" 
+twitter_username: sagarhan_i
+github_username:  sagarhani
+
+# Build settings
+markdown: kramdown
