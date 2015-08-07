@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Mid-night git session at dgplug"
-date:   2015-08-03 20:08:56
-categories: jekyll update
+permalink: As per Akshay's suggestion :P
+
 ---
 
 
