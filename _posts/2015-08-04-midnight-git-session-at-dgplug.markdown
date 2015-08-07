@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Mid-night git session at dgplug"
-date:   2015-08-03 20:08:56
-categories: jekyll update
+title:  Mid-night git session at dgplug
+summary: Learning git by solving a prog
+permalink: as per akshay's suggestion :P
 ---
 
 
