@@ -5,15 +5,36 @@
     <description></description>
     <link>http://sagarhani.in/</link>
     <atom:link href="http://sagarhani.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Aug 2015 22:04:07 +0530</pubDate>
-    <lastBuildDate>Fri, 07 Aug 2015 22:04:07 +0530</lastBuildDate>
+    <pubDate>Sun, 09 Aug 2015 20:53:30 +0530</pubDate>
+    <lastBuildDate>Sun, 09 Aug 2015 20:53:30 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Mid-night git session at dgplug</title>
-        <description>&lt;p&gt;I’m using git since few months. The world of git is too big. You have lot of things to explore in that.&lt;/p&gt;
+        <description>&lt;ul class=&quot;image-set&quot;&gt;
+&lt;li class=&quot;image-item&quot;&gt;
+&lt;img src=&quot;/images/gallery1/image3.jpg&quot; class=&quot;image&quot; /&gt;
+&lt;/li&gt;
+&lt;li class=&quot;image-item&quot;&gt;
+&lt;img src=&quot;/images/gallery1/image2.png&quot; class=&quot;image&quot; /&gt;
+&lt;/li&gt;
+&lt;li class=&quot;image-item&quot;&gt;
+&lt;img src=&quot;/images/gallery1/image1.png&quot; class=&quot;image&quot; /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’m using git since few months. The world of git is too big. You have lot of things to explore in that.&lt;/p&gt;
 
 &lt;p&gt;One way to explore things in any technology or programming language is by solving the problems.&lt;/p&gt;
+
+&lt;ul class=&quot;image-set&quot;&gt;
+&lt;li class=&quot;image-item&quot;&gt;
+&lt;img src=&quot;/images/gallery2/image2.png&quot; class=&quot;image&quot; /&gt;
+&lt;/li&gt;
+&lt;li class=&quot;image-item&quot;&gt;
+&lt;img src=&quot;/images/gallery2/image1.png&quot; class=&quot;image&quot; /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;On &lt;a href=&quot;http://dgplug.org&quot;&gt;#dgplug&lt;/a&gt; (Durgapur Linux Users’ Group) channel, someone had a problem with git.&lt;/p&gt;
 
@@ -143,8 +164,8 @@ HEAD~2 takes 2 commit behind and so on…&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 03 Aug 2015 00:00:00 +0530</pubDate>
-        <link>http://sagarhani.in/As per Akshay's suggestion :P</link>
-        <guid isPermaLink="true">http://sagarhani.in/As per Akshay's suggestion :P</guid>
+        <link>http://sagarhani.in/as-per-akshays-suggestion-:P</link>
+        <guid isPermaLink="true">http://sagarhani.in/as-per-akshays-suggestion-:P</guid>
         
         
       </item>

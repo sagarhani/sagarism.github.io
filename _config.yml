@@ -11,5 +11,3 @@ github_username:  sagarhani
 # Build settings
 markdown: kramdown
 
-gems:
-  - jekyll-sitemap

@@ -5,10 +5,14 @@ permalink: as-per-akshays-suggestion-:P
 
 ---
 
+{% image_set images/gallery1 --wrap_class=some_class %}
 
 I’m using git since few months. The world of git is too big. You have lot of things to explore in that.
 
 One way to explore things in any technology or programming language is by solving the problems.
+
+{% image_set images/gallery2 --wrap_class=some_class %}
+
 
 On [#dgplug][dgplug] (Durgapur Linux Users’ Group) channel, someone had a problem with git.
 
